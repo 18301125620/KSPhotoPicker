@@ -1,0 +1,12 @@
+/* 
+  KSPhotoString.strings
+  test
+
+  Created by Mr.kong on 2017/2/22.
+  Copyright © 2017年 Mr.kong. All rights reserved.
+*/
+
+"Done"      =   "完成";
+"Cancel"    =   "取消";
+"Album"     =   "相册";
+"Denied"    =   "未获取媒体权限";

@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5F9AED1E5E9BD200F526FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9AEC1E5E9BD200F526FB /* main.m */; };
+		2C5F9AF01E5E9BD200F526FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9AEF1E5E9BD200F526FB /* AppDelegate.m */; };
+		2C5F9AF31E5E9BD200F526FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9AF21E5E9BD200F526FB /* ViewController.m */; };
+		2C5F9AF61E5E9BD200F526FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5F9AF41E5E9BD200F526FB /* Main.storyboard */; };
+		2C5F9AF81E5E9BD200F526FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5F9AF71E5E9BD200F526FB /* Assets.xcassets */; };
+		2C5F9AFB1E5E9BD200F526FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5F9AF91E5E9BD200F526FB /* LaunchScreen.storyboard */; };
+		2C5F9B1B1E5E9C2400F526FB /* KSPhotoString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5F9B031E5E9C2400F526FB /* KSPhotoString.strings */; };
+		2C5F9B1C1E5E9C2400F526FB /* KSAssetBrowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B071E5E9C2400F526FB /* KSAssetBrowerController.m */; };
+		2C5F9B1D1E5E9C2400F526FB /* KSPhotoAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B091E5E9C2400F526FB /* KSPhotoAlbumListCell.m */; };
+		2C5F9B1E1E5E9C2400F526FB /* KSPhotoAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B0B1E5E9C2400F526FB /* KSPhotoAlbumListController.m */; };
+		2C5F9B1F1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B0D1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m */; };
+		2C5F9B201E5E9C2400F526FB /* KSPhotoBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C5F9B0E1E5E9C2400F526FB /* KSPhotoBundle.bundle */; };
+		2C5F9B211E5E9C2400F526FB /* KSPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B101E5E9C2400F526FB /* KSPhotoListCell.m */; };
+		2C5F9B221E5E9C2400F526FB /* KSPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B121E5E9C2400F526FB /* KSPhotoListViewController.m */; };
+		2C5F9B231E5E9C2400F526FB /* KSPhotoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B151E5E9C2400F526FB /* KSPhotoUtil.m */; };
+		2C5F9B241E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B171E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m */; };
+		2C5F9B251E5E9C2400F526FB /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C5F9AE81E5E9BD200F526FB /* KSPhotoPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSPhotoPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5F9AEC1E5E9BD200F526FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C5F9AEE1E5E9BD200F526FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C5F9AEF1E5E9BD200F526FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C5F9AF11E5E9BD200F526FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C5F9AF21E5E9BD200F526FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C5F9AF51E5E9BD200F526FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C5F9AF71E5E9BD200F526FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C5F9AFA1E5E9BD200F526FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C5F9AFC1E5E9BD200F526FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C5F9B041E5E9C2400F526FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/KSPhotoString.strings; sourceTree = "<group>"; };
+		2C5F9B051E5E9C2400F526FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KSPhotoString.strings; sourceTree = "<group>"; };
+		2C5F9B061E5E9C2400F526FB /* KSAssetBrowerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSAssetBrowerController.h; sourceTree = "<group>"; };
+		2C5F9B071E5E9C2400F526FB /* KSAssetBrowerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSAssetBrowerController.m; sourceTree = "<group>"; };
+		2C5F9B081E5E9C2400F526FB /* KSPhotoAlbumListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoAlbumListCell.h; sourceTree = "<group>"; };
+		2C5F9B091E5E9C2400F526FB /* KSPhotoAlbumListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoAlbumListCell.m; sourceTree = "<group>"; };
+		2C5F9B0A1E5E9C2400F526FB /* KSPhotoAlbumListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoAlbumListController.h; sourceTree = "<group>"; };
+		2C5F9B0B1E5E9C2400F526FB /* KSPhotoAlbumListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoAlbumListController.m; sourceTree = "<group>"; };
+		2C5F9B0C1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoAuthorizationDenyView.h; sourceTree = "<group>"; };
+		2C5F9B0D1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoAuthorizationDenyView.m; sourceTree = "<group>"; };
+		2C5F9B0E1E5E9C2400F526FB /* KSPhotoBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KSPhotoBundle.bundle; sourceTree = "<group>"; };
+		2C5F9B0F1E5E9C2400F526FB /* KSPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoListCell.h; sourceTree = "<group>"; };
+		2C5F9B101E5E9C2400F526FB /* KSPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoListCell.m; sourceTree = "<group>"; };
+		2C5F9B111E5E9C2400F526FB /* KSPhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoListViewController.h; sourceTree = "<group>"; };
+		2C5F9B121E5E9C2400F526FB /* KSPhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoListViewController.m; sourceTree = "<group>"; };
+		2C5F9B131E5E9C2400F526FB /* KSPhotoPickerProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoPickerProtocal.h; sourceTree = "<group>"; };
+		2C5F9B141E5E9C2400F526FB /* KSPhotoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoUtil.h; sourceTree = "<group>"; };
+		2C5F9B151E5E9C2400F526FB /* KSPhotoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoUtil.m; sourceTree = "<group>"; };
+		2C5F9B161E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PHAsset_KSPhoto.h"; sourceTree = "<group>"; };
+		2C5F9B171E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PHAsset_KSPhoto.m"; sourceTree = "<group>"; };
+		2C5F9B181E5E9C2400F526FB /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
+		2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
+		2C5F9B1A1E5E9C2400F526FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KSPhotoString.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C5F9AE51E5E9BD200F526FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5F9ADF1E5E9BD200F526FB = {
+			isa = PBXGroup;
+			children = (
+				2C5F9AEA1E5E9BD200F526FB /* KSPhotoPickerDemo */,
+				2C5F9AE91E5E9BD200F526FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C5F9AE91E5E9BD200F526FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F9AE81E5E9BD200F526FB /* KSPhotoPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C5F9AEA1E5E9BD200F526FB /* KSPhotoPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F9B021E5E9C2400F526FB /* KSPhotoPicker */,
+				2C5F9AEE1E5E9BD200F526FB /* AppDelegate.h */,
+				2C5F9AEF1E5E9BD200F526FB /* AppDelegate.m */,
+				2C5F9AF11E5E9BD200F526FB /* ViewController.h */,
+				2C5F9AF21E5E9BD200F526FB /* ViewController.m */,
+				2C5F9AF41E5E9BD200F526FB /* Main.storyboard */,
+				2C5F9AF71E5E9BD200F526FB /* Assets.xcassets */,
+				2C5F9AF91E5E9BD200F526FB /* LaunchScreen.storyboard */,
+				2C5F9AFC1E5E9BD200F526FB /* Info.plist */,
+				2C5F9AEB1E5E9BD200F526FB /* Supporting Files */,
+			);
+			path = KSPhotoPickerDemo;
+			sourceTree = "<group>";
+		};
+		2C5F9AEB1E5E9BD200F526FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F9AEC1E5E9BD200F526FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C5F9B021E5E9C2400F526FB /* KSPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F9B031E5E9C2400F526FB /* KSPhotoString.strings */,
+				2C5F9B061E5E9C2400F526FB /* KSAssetBrowerController.h */,
+				2C5F9B071E5E9C2400F526FB /* KSAssetBrowerController.m */,
+				2C5F9B081E5E9C2400F526FB /* KSPhotoAlbumListCell.h */,
+				2C5F9B091E5E9C2400F526FB /* KSPhotoAlbumListCell.m */,
+				2C5F9B0A1E5E9C2400F526FB /* KSPhotoAlbumListController.h */,
+				2C5F9B0B1E5E9C2400F526FB /* KSPhotoAlbumListController.m */,
+				2C5F9B0C1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.h */,
+				2C5F9B0D1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m */,
+				2C5F9B0E1E5E9C2400F526FB /* KSPhotoBundle.bundle */,
+				2C5F9B0F1E5E9C2400F526FB /* KSPhotoListCell.h */,
+				2C5F9B101E5E9C2400F526FB /* KSPhotoListCell.m */,
+				2C5F9B111E5E9C2400F526FB /* KSPhotoListViewController.h */,
+				2C5F9B121E5E9C2400F526FB /* KSPhotoListViewController.m */,
+				2C5F9B131E5E9C2400F526FB /* KSPhotoPickerProtocal.h */,
+				2C5F9B141E5E9C2400F526FB /* KSPhotoUtil.h */,
+				2C5F9B151E5E9C2400F526FB /* KSPhotoUtil.m */,
+				2C5F9B161E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.h */,
+				2C5F9B171E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m */,
+				2C5F9B181E5E9C2400F526FB /* UIView+Badge.h */,
+				2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */,
+			);
+			path = KSPhotoPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C5F9AE71E5E9BD200F526FB /* KSPhotoPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5F9AFF1E5E9BD200F526FB /* Build configuration list for PBXNativeTarget "KSPhotoPickerDemo" */;
+			buildPhases = (
+				2C5F9AE41E5E9BD200F526FB /* Sources */,
+				2C5F9AE51E5E9BD200F526FB /* Frameworks */,
+				2C5F9AE61E5E9BD200F526FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSPhotoPickerDemo;
+			productName = KSPhotoPickerDemo;
+			productReference = 2C5F9AE81E5E9BD200F526FB /* KSPhotoPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C5F9AE01E5E9BD200F526FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Mr.kong;
+				TargetAttributes = {
+					2C5F9AE71E5E9BD200F526FB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z8VW3A9F2K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C5F9AE31E5E9BD200F526FB /* Build configuration list for PBXProject "KSPhotoPickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 2C5F9ADF1E5E9BD200F526FB;
+			productRefGroup = 2C5F9AE91E5E9BD200F526FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C5F9AE71E5E9BD200F526FB /* KSPhotoPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C5F9AE61E5E9BD200F526FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5F9B201E5E9C2400F526FB /* KSPhotoBundle.bundle in Resources */,
+				2C5F9B1B1E5E9C2400F526FB /* KSPhotoString.strings in Resources */,
+				2C5F9AFB1E5E9BD200F526FB /* LaunchScreen.storyboard in Resources */,
+				2C5F9AF81E5E9BD200F526FB /* Assets.xcassets in Resources */,
+				2C5F9AF61E5E9BD200F526FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C5F9AE41E5E9BD200F526FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5F9B211E5E9C2400F526FB /* KSPhotoListCell.m in Sources */,
+				2C5F9B1E1E5E9C2400F526FB /* KSPhotoAlbumListController.m in Sources */,
+				2C5F9B231E5E9C2400F526FB /* KSPhotoUtil.m in Sources */,
+				2C5F9B221E5E9C2400F526FB /* KSPhotoListViewController.m in Sources */,
+				2C5F9B251E5E9C2400F526FB /* UIView+Badge.m in Sources */,
+				2C5F9B1F1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m in Sources */,
+				2C5F9B1D1E5E9C2400F526FB /* KSPhotoAlbumListCell.m in Sources */,
+				2C5F9AF31E5E9BD200F526FB /* ViewController.m in Sources */,
+				2C5F9AF01E5E9BD200F526FB /* AppDelegate.m in Sources */,
+				2C5F9B241E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m in Sources */,
+				2C5F9AED1E5E9BD200F526FB /* main.m in Sources */,
+				2C5F9B1C1E5E9C2400F526FB /* KSAssetBrowerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C5F9AF41E5E9BD200F526FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5F9AF51E5E9BD200F526FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C5F9AF91E5E9BD200F526FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5F9AFA1E5E9BD200F526FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C5F9B031E5E9C2400F526FB /* KSPhotoString.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5F9B041E5E9C2400F526FB /* Base */,
+				2C5F9B051E5E9C2400F526FB /* en */,
+				2C5F9B1A1E5E9C2400F526FB /* zh-Hans */,
+			);
+			name = KSPhotoString.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C5F9AFD1E5E9BD200F526FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C5F9AFE1E5E9BD200F526FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C5F9B001E5E9BD200F526FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8VW3A9F2K;
+				INFOPLIST_FILE = KSPhotoPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.anfou.anfoukeji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C5F9B011E5E9BD200F526FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z8VW3A9F2K;
+				INFOPLIST_FILE = KSPhotoPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.anfou.anfoukeji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5F9AE31E5E9BD200F526FB /* Build configuration list for PBXProject "KSPhotoPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5F9AFD1E5E9BD200F526FB /* Debug */,
+				2C5F9AFE1E5E9BD200F526FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5F9AFF1E5E9BD200F526FB /* Build configuration list for PBXNativeTarget "KSPhotoPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5F9B001E5E9BD200F526FB /* Debug */,
+				2C5F9B011E5E9BD200F526FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C5F9AE01E5E9BD200F526FB /* Project object */;
+}
