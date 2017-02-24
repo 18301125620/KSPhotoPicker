@@ -11,10 +11,14 @@
 @class PHAsset;
 @class UIImage;
 
-typedef void(^KSPhotoRequestImageProgressHandle)(PHAsset* asset,UIImage* image);
-typedef void(^KSPhotoRequestImageCompleteHandle)(NSArray<UIImage*>* images);
+typedef void(^KSPhotoRequestImageProgressHandle)(PHAsset* asset);
+typedef void(^KSPhotoRequestImageCompleteHandle)(NSArray<PHAsset*>* assets);
 
 @interface KSPhotoRequestImageOption : NSObject
+@property (nonatomic, assign) float thumbnailMaxPixelSize;
+@property (nonatomic, assign) bool  synchronous;
+//@property (nonatomic, assign) bool  cache;
+
 @end
 
 

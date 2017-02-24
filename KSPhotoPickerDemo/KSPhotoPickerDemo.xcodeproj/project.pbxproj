@@ -24,6 +24,8 @@
 		2C5F9B231E5E9C2400F526FB /* KSPhotoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B151E5E9C2400F526FB /* KSPhotoUtil.m */; };
 		2C5F9B241E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B171E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m */; };
 		2C5F9B251E5E9C2400F526FB /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */; };
+		2C5F9B2B1E602E9F00F526FB /* PHAsset+KSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B2A1E602E9F00F526FB /* PHAsset+KSPhoto.m */; };
+		2C5F9B2E1E6043EF00F526FB /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F9B2D1E6043EF00F526FB /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,11 @@
 		2C5F9B181E5E9C2400F526FB /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		2C5F9B1A1E5E9C2400F526FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KSPhotoString.strings"; sourceTree = "<group>"; };
+		2C5F9B291E602E9F00F526FB /* PHAsset+KSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+KSPhoto.h"; sourceTree = "<group>"; };
+		2C5F9B2A1E602E9F00F526FB /* PHAsset+KSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+KSPhoto.m"; sourceTree = "<group>"; };
+		2C5F9B2C1E6043EF00F526FB /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		2C5F9B2D1E6043EF00F526FB /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		2C5F9B2F1E60459300F526FB /* KSPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSPhotoPicker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,8 @@
 				2C5F9AEF1E5E9BD200F526FB /* AppDelegate.m */,
 				2C5F9AF11E5E9BD200F526FB /* ViewController.h */,
 				2C5F9AF21E5E9BD200F526FB /* ViewController.m */,
+				2C5F9B2C1E6043EF00F526FB /* CollectionViewCell.h */,
+				2C5F9B2D1E6043EF00F526FB /* CollectionViewCell.m */,
 				2C5F9AF41E5E9BD200F526FB /* Main.storyboard */,
 				2C5F9AF71E5E9BD200F526FB /* Assets.xcassets */,
 				2C5F9AF91E5E9BD200F526FB /* LaunchScreen.storyboard */,
@@ -136,8 +145,11 @@
 				2C5F9B151E5E9C2400F526FB /* KSPhotoUtil.m */,
 				2C5F9B161E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.h */,
 				2C5F9B171E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m */,
+				2C5F9B291E602E9F00F526FB /* PHAsset+KSPhoto.h */,
+				2C5F9B2A1E602E9F00F526FB /* PHAsset+KSPhoto.m */,
 				2C5F9B181E5E9C2400F526FB /* UIView+Badge.h */,
 				2C5F9B191E5E9C2400F526FB /* UIView+Badge.m */,
+				2C5F9B2F1E60459300F526FB /* KSPhotoPicker.h */,
 			);
 			path = KSPhotoPicker;
 			sourceTree = "<group>";
@@ -220,6 +232,7 @@
 				2C5F9B211E5E9C2400F526FB /* KSPhotoListCell.m in Sources */,
 				2C5F9B1E1E5E9C2400F526FB /* KSPhotoAlbumListController.m in Sources */,
 				2C5F9B231E5E9C2400F526FB /* KSPhotoUtil.m in Sources */,
+				2C5F9B2B1E602E9F00F526FB /* PHAsset+KSPhoto.m in Sources */,
 				2C5F9B221E5E9C2400F526FB /* KSPhotoListViewController.m in Sources */,
 				2C5F9B251E5E9C2400F526FB /* UIView+Badge.m in Sources */,
 				2C5F9B1F1E5E9C2400F526FB /* KSPhotoAuthorizationDenyView.m in Sources */,
@@ -228,6 +241,7 @@
 				2C5F9AF01E5E9BD200F526FB /* AppDelegate.m in Sources */,
 				2C5F9B241E5E9C2400F526FB /* NSArray+PHAsset_KSPhoto.m in Sources */,
 				2C5F9AED1E5E9BD200F526FB /* main.m in Sources */,
+				2C5F9B2E1E6043EF00F526FB /* CollectionViewCell.m in Sources */,
 				2C5F9B1C1E5E9C2400F526FB /* KSAssetBrowerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
