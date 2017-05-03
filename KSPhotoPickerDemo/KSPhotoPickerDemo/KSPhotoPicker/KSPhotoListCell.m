@@ -27,7 +27,7 @@
         self.gradientLayer.startPoint                   = CGPointMake(0, 0);
         self.gradientLayer.endPoint                     = CGPointMake(0, 1);
         [self.layer addSublayer:self.gradientLayer];
-
+        
         self.imageLayer                                 = [CALayer layer];
         self.imageLayer.contents                        = (__bridge id _Nullable)([UIImage imageNamed:@"KSPhotoBundle.bundle/KSAssetTypeVideo"].CGImage);
         [self.layer addSublayer:self.imageLayer];
@@ -61,12 +61,12 @@
     CGFloat timeLabelY                                  = 0;
     CGFloat timeLabelW                                  = CGRectGetWidth(self.bounds) - CGRectGetMaxX(self.imageLayer.frame) - 5;
     CGFloat timeLabelH                                  = CGRectGetHeight(self.bounds);
-
+    
     self.timeLabel.frame                                = CGRectMake(timeLabelX,
                                                                      timeLabelY,
                                                                      timeLabelW,
                                                                      timeLabelH);
-
+    
 }
 
 @end
@@ -91,7 +91,7 @@
         [self.contentView.layer addSublayer:self.imageLayer];
         
         [self.contentView addSubview:self.videoView];
-
+        
         [self.contentView addSubview:self.selectedIconButton];
         
         [self.contentView addSubview:self.showButton];
@@ -131,6 +131,28 @@
     self.selectedIconButton.selected = selected;
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
+    UITouch* touch = [touches anyObject];
+    CGPoint local = [touch locationInView:self.selectedIconButton];
+    
+    if (CGRectContainsPoint(self.selectedIconButton.bounds, local)) {
+        [self startAnimated:self.selected];
+    }
+}
+
+- (void)startAnimated:(BOOL)animated{
+    [self.selectedIconButton.imageView.layer removeAllAnimations];
+    
+    __weak typeof(self) weakSelf = self;
+    [UIView animateWithDuration:.2
+                     animations:^{
+                         weakSelf.selectedIconButton.imageView.transform = CGAffineTransformMakeScale(1.2, 1.2);
+                     } completion:^(BOOL finished) {
+                         weakSelf.selectedIconButton.imageView.transform = CGAffineTransformIdentity;
+                     }];
+}
+
 - (void)setAsset:(PHAsset *)asset{
     _asset = asset;
     
@@ -159,12 +181,12 @@
         options.deliveryMode                            = PHImageRequestOptionsDeliveryModeOpportunistic;
         
         [[PHCachingImageManager defaultManager] requestImageForAsset:asset
-                                                   targetSize:KSSizeScreenScale(self.imageLayer.bounds.size)
-                                                  contentMode:PHImageContentModeAspectFill
-                                                      options:options
-                                                resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                    weakSelf.imageLayer.contents = (__bridge id _Nullable)(result.CGImage);
-                                                }];
+                                                          targetSize:KSSizeScreenScale(self.imageLayer.bounds.size)
+                                                         contentMode:PHImageContentModeAspectFill
+                                                             options:options
+                                                       resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                                                           weakSelf.imageLayer.contents = (__bridge id _Nullable)(result.CGImage);
+                                                       }];
     });
 }
 
@@ -178,8 +200,8 @@
     if (!_showButton) {
         _showButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_showButton addTarget:self
-                            action:@selector(showButtonAction:)
-                  forControlEvents:UIControlEventTouchUpInside];
+                        action:@selector(showButtonAction:)
+              forControlEvents:UIControlEventTouchUpInside];
     }
     return _showButton;
 }
@@ -189,7 +211,7 @@
         _selectedIconButton                             = [UIButton buttonWithType:UIButtonTypeCustom];
         
         [_selectedIconButton setImage:[UIImage imageNamed:@"KSPhotoBundle.bundle/KSAssetSelected"]
-                         forState:UIControlStateSelected];
+                             forState:UIControlStateSelected];
         [_selectedIconButton setImage:[UIImage imageNamed:@"KSPhotoBundle.bundle/KSAssetUnSelected"]
                              forState:UIControlStateNormal];
         
