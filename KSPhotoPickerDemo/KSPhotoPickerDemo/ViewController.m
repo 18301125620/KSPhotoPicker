@@ -32,6 +32,7 @@
     };
     
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:list];
+    
     [self presentViewController:nav animated:YES completion:NULL];
 }
 

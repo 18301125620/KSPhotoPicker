@@ -10,10 +10,8 @@
 #import "KSPhotoAlbumListCell.h"
 #import "KSPhotoListViewController.h"
 #import "KSPhotoAuthorizationDenyView.h"
-#import "UIView+Badge.h"
 
 @interface KSPhotoAlbumListController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) UIButton                                      * rightButton;
 @property (nonatomic, strong) UITableView                                   * tableView;
 @property (nonatomic, strong) NSMutableArray<PHAssetCollection*>            * result;
 @end
@@ -26,20 +24,15 @@
     [self.view addSubview:self.tableView];
     
     self.navigationItem.title = NSLocalizedStringFromTable(@"Album", @"KSPhotoString", nil);
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.rightButton];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Cancel", @"KSPhotoString", nil)
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedStringFromTable(@"Cancel", @"KSPhotoString", nil)
                                                                               style:UIBarButtonItemStyleDone
                                                                              target:self
                                                                              action:@selector(cancel)];
     self.result = [NSMutableArray array];
     
+    
     [self authorizationStatus];
    
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    self.rightButton.badge = self.photos.count;
 }
 
 - (void)viewDidLayoutSubviews{
@@ -119,6 +112,12 @@
     KSPhotoListViewController* listView = [[KSPhotoListViewController alloc] init];
     listView.collection = self.result[indexPath.row];
     listView.assets = self.photos;
+    
+    listView.cancelHandle = self.cancelHandle;
+    listView.commitHandle = self.commitHandle;
+    
+    listView.delegate = self.delegate;
+    
     [self.navigationController pushViewController:listView animated:YES];
 }
 
@@ -147,22 +146,6 @@
     }
     
     return _photos;
-}
-
-- (UIButton *)rightButton{
-    if (!_rightButton) {
-        _rightButton                        = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_rightButton setTitle:NSLocalizedStringFromTable(@"Done", @"KSPhotoString", nil)
-                      forState:UIControlStateNormal];
-        _rightButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
-        [_rightButton setTitleColor:self.navigationController.navigationBar.tintColor
-                           forState:UIControlStateNormal];
-        [_rightButton addTarget:self
-                         action:@selector(commit)
-               forControlEvents:UIControlEventTouchUpInside];
-        [_rightButton sizeToFit];
-    }
-    return _rightButton;
 }
 
 - (void)cancel{
